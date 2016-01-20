@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( LoadDisplay )
+find_package( OpenCV REQUIRED )
+add_executable( LoadDisplay LoadDisplay.cpp )
+target_link_libraries( LoadDisplay ${OpenCV_LIBS} )
