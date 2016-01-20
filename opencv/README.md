@@ -1,1 +1,1 @@
-All test images are in the images/ directory.
+All test images are in the ./images directory.

@@ -12,3 +12,13 @@ To apply a mask (or kernel) to an image:
         1. The basic method --> manual approach
         2. filter2D --> built-in, fast, easy
     void filter2D(originalMat, outputMat, depth, kernel);
+
+To linearly blend two images:
+    alpha = value between 0 - 1
+    beta = (1.0 - alpha);
+    void addWeighted(image1, alpha, image2, beta, 0.0, newImage);
+
+To adjust the brightness or contrast:
+    - alpha is the gain and is used to adjust contrast
+    - beta is the bias and is used to adjust brightness
+    void imageMat.convertTo(new_imageMat, -1, alpha, beta);
