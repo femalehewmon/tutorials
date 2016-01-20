@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Blend )
+find_package( OpenCV REQUIRED )
+add_executable( Blend Blend.cpp )
+target_link_libraries( Blend ${OpenCV_LIBS} )
