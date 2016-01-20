@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( HowToScan )
+find_package( OpenCV REQUIRED )
+add_executable( HowToScan HowToScan.cpp )
+target_link_libraries( HowToScan ${OpenCV_LIBS} )
