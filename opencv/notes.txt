@@ -1,0 +1,14 @@
+To scan images pixel by pixel:
+    3 main methods:
+        1. C-style  --> efficient
+        2. Iterator --> easy and safe
+        3. On-the-fly --> meant for random pixel access
+
+A built-in function for complete look-up table transformations: LUT
+    void LUT(original, lookup-table, new);
+
+To apply a mask (or kernel) to an image:
+    2 main methods:
+        1. The basic method --> manual approach
+        2. filter2D --> built-in, fast, easy
+    void filter2D(originalMat, outputMat, depth, kernel);
