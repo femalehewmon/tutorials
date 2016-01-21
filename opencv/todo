@@ -1,0 +1,17 @@
+Introduction
+    gccCMake
+    LoadDisplay
+    LoadModSave
+core
+    MatDemo
+    HowToScan
+    Mask
+    Blend
+    Contrast
+    Drawing
+    RandomText
+    DFT
+imgproc
+    Smoothing
+highgui
+    Trackbar

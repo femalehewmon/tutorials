@@ -4,13 +4,10 @@ To scan images pixel by pixel:
         2. Iterator --> easy and safe
         3. On-the-fly --> meant for random pixel access
 
-A built-in function for complete look-up table transformations: LUT
+To apply a look-up table transformation:
     void LUT(original, lookup-table, new);
 
 To apply a mask (or kernel) to an image:
-    2 main methods:
-        1. The basic method --> manual approach
-        2. filter2D --> built-in, fast, easy
     void filter2D(originalMat, outputMat, depth, kernel);
 
 To linearly blend two images:
@@ -18,7 +15,9 @@ To linearly blend two images:
     beta = (1.0 - alpha);
     void addWeighted(image1, alpha, image2, beta, 0.0, newImage);
 
-To adjust the brightness or contrast:
+To adjust the brightness or contrast of an image:
     - alpha is the gain and is used to adjust contrast
     - beta is the bias and is used to adjust brightness
     void imageMat.convertTo(new_imageMat, -1, alpha, beta);
+
+
