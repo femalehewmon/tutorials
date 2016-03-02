@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( Laplacian )
+find_package( OpenCV REQUIRED )
+add_executable( Laplacian Laplacian.cpp )
+target_link_libraries( Laplacian ${OpenCV_LIBS} )
