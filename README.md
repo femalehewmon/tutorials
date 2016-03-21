@@ -1,1 +1,1 @@
-[Github Page for Tutorials](http://username.github.io/repository)
+[Github Page for Tutorials](http://mvanwelie.github.io/tutorials)
