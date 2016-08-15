@@ -20,7 +20,12 @@ ret, sure_fg = cv2.threshold(dist_transform, 0.7*dist_transform.max(), 255, 0)
 sure_fg = np.uint8(sure_fg)
 unknown = cv2.subtract(sure_bg, sure_fg)
 
-ret, markers = cv2.connectedComponents(sure_fg)
+ret, markers = cv2.connectedComponents(sure_bg)
+cv2.imshow("sure fg", sure_fg)
+cv2.imshow("sure bg", sure_bg)
+cv2.imshow("unknown", unknown)
+print(ret)
+cv2.waitKey(0)
 markers = markers+1
 markers[unknown==255] = 0
 
